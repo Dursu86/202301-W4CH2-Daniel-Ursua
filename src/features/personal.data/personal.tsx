@@ -15,28 +15,27 @@ export function Personal() {
         BirthDate
         <input type="date" name="" required />
       </label>
-      <label className="question">
-        Gender
-        <div>
-          <input type="radio" />
-          <label htmlFor="Male">Male</label>
-        </div>
-        <div>
-          <input type="radio" />
-          <label htmlFor="Female">Female</label>
-        </div>
-        <div>
-          <input type="radio" />
-          <label htmlFor="Other/prefer not to mention">
-            Other/prefer not to mention
-          </label>
-        </div>
-      </label>
+      Gender
+      <div>
+        <label htmlFor="Male">
+          <input type="radio" id="Male" name="gender" />
+          Male
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="female" name="gender" />
+        <label htmlFor="female">Female</label>
+      </div>
+      <div>
+        <input type="radio" id="Other" name="gender" checked />
+        <label htmlFor="Other">Other/prefer not to mention</label>
+      </div>
       <div>
         <input type="checkbox" />
         <label htmlFor="newsletter">
           Check if you want to subscribe to our newsletter
         </label>
+        <button className="pageButton">Next page</button>
       </div>
     </form>
   );

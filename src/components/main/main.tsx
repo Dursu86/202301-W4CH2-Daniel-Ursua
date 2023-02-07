@@ -5,7 +5,6 @@ export function Main() {
   return (
     <main className="main">
       <Personal />
-      <Access />
     </main>
   );
 }
