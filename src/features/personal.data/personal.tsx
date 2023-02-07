@@ -1,19 +1,21 @@
+import "./personal.scss";
+
 export function Personal() {
   return (
-    <form>
-      <label>
+    <form className="personalData">
+      <label className="question">
         Name
         <input type="text" name="" required />
       </label>
-      <label>
+      <label className="question">
         Lastname
         <input type="text" name="" required />
       </label>
-      <label>
+      <label className="question">
         BirthDate
         <input type="date" name="" required />
       </label>
-      <label>
+      <label className="question">
         Gender
         <div>
           <input type="radio" />
